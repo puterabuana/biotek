@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://biotekfarmasi.com/sitemap.xml
