@@ -2,7 +2,7 @@
  * host, and nothing carries another brand's name. */
 
 /* Abstract foliage bokeh behind the hero. */
-export const HERO_BG = '/img/hero-bg.jpg';
+export const HERO_BG = '/img/hero-bg.webp';
 
 /* The whole range in one shot, cut out of its dark studio backdrop so it can
  * float straight over the hero.

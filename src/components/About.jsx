@@ -66,7 +66,11 @@ export default function About() {
           >
             <img
               src={PRODUCTS[2].image}
+              srcSet={PRODUCTS[2].imageSrcSet}
+              sizes="(max-width: 1023px) 100vw, 50vw"
               alt="K-Fix capsules"
+              width="880"
+              height="1100"
               loading="lazy"
               decoding="async"
               className="pointer-events-none absolute inset-0 h-full w-full object-cover"

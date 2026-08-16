@@ -202,26 +202,38 @@ export default function BiotekHero() {
             fits where fixed steps left gaps. Width tops out at 780px; below
             roughly 1100px the CTA paragraph leaves room for little more than
             240px, hence the steep ramp. */}
-        <img
-          src={HERO_BUNDLE}
-          alt="Biotek Farmasi Indonesia herbal supplement range: Viradef, Dialance, K-Fix and Regimun"
+        <picture
           style={{
             width: 'clamp(240px, calc(50vw - 272px), 780px)',
             bottom: 'clamp(24px, calc(9vw - 80px), 150px)',
           }}
-          className="animate-scale-in delay-700 pointer-events-none absolute right-[30px] hidden h-auto drop-shadow-2xl lg:block"
-        />
+          className="animate-scale-in delay-700 pointer-events-none absolute right-[30px] hidden lg:block"
+        >
+          <source media="(max-width: 1023px)" srcSet="/img/produk/bundle-sm.webp" type="image/webp" />
+          <img
+            src={HERO_BUNDLE}
+            alt="Biotek Farmasi Indonesia herbal supplement range: Viradef, Dialance, K-Fix and Regimun"
+            width="1100"
+            height="531"
+            className="h-auto w-full drop-shadow-2xl"
+          />
+        </picture>
       </section>
 
       {/* ---------------------------------------------------------- *
        * Pack shot — mobile and tablet
        * ---------------------------------------------------------- */}
       <div className="pointer-events-none relative z-[5] px-5 pb-6 pt-2 sm:px-8 lg:hidden">
-        <img
-          src={HERO_BUNDLE}
-          alt="The Biotek range: Viradef, Dialance, K-Fix and Regimun"
-          className="animate-scale-in delay-800 mx-auto w-full max-w-[520px] object-contain drop-shadow-2xl"
-        />
+        <picture className="animate-scale-in delay-800 mx-auto block w-full max-w-[520px]">
+          <source media="(max-width: 1023px)" srcSet="/img/produk/bundle-sm.webp" type="image/webp" />
+          <img
+            src={HERO_BUNDLE}
+            alt="The Biotek range: Viradef, Dialance, K-Fix and Regimun"
+            width="1100"
+            height="531"
+            className="h-auto w-full object-contain drop-shadow-2xl"
+          />
+        </picture>
       </div>
 
       {/* ---------------------------------------------------------- *

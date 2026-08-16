@@ -14,10 +14,10 @@ export const BACKDROP = '#CFD7DA';
 export const CATEGORIES = ['All', 'Immunity', 'Blood sugar', 'Kidney', 'Immune system'];
 
 const stores = (tokopedia, shopee, tiktok, blibli) => [
-  { name: 'Tokopedia', url: tokopedia, logo: '/img/marketplace/toped.png' },
-  { name: 'Shopee', url: shopee, logo: '/img/marketplace/shopee.png' },
-  { name: 'TikTok Shop', url: tiktok, logo: '/img/marketplace/tiktok.png' },
-  { name: 'Blibli', url: blibli, logo: '/img/marketplace/blibli.png' },
+  { name: 'Tokopedia', url: tokopedia, logo: '/img/marketplace/toped.webp' },
+  { name: 'Shopee', url: shopee, logo: '/img/marketplace/shopee.webp' },
+  { name: 'TikTok Shop', url: tiktok, logo: '/img/marketplace/tiktok.webp' },
+  { name: 'Blibli', url: blibli, logo: '/img/marketplace/blibli.webp' },
 ];
 
 export const PRODUCTS = [
@@ -28,8 +28,9 @@ export const PRODUCTS = [
     rating: '5.0',
     packaging: '3 blisters × 10 capsules · enteric coated',
     blurb: 'Blocks viral entry and replication while lifting cellular energy.',
-    image: '/img/produk/viradef.jpg',
-    gallery: ['/img/produk/viradef.jpg', '/img/produk/viradef-2.png'],
+    image: '/img/produk/viradef.webp',
+    imageSrcSet: '/img/produk/viradef-sm.webp 440w, /img/produk/viradef.webp 880w',
+    gallery: ['/img/produk/viradef.webp', '/img/produk/viradef-2.png'],
     benefits: [
       'Prevents viruses from entering the cell',
       'Inhibits viral replication once a virus is already inside the cell',
@@ -68,8 +69,9 @@ export const PRODUCTS = [
     rating: '5.0',
     packaging: 'Enteric-coated capsules',
     blurb: 'Normalises blood sugar and protects the organs diabetes wears down.',
-    image: '/img/produk/dialance.jpg',
-    gallery: ['/img/produk/dialance.jpg', '/img/produk/dialance-2.jpg'],
+    image: '/img/produk/dialance.webp',
+    imageSrcSet: '/img/produk/dialance-sm.webp 440w, /img/produk/dialance.webp 880w',
+    gallery: ['/img/produk/dialance.webp', '/img/produk/dialance-2.jpg'],
     benefits: [
       'Helps normalise blood sugar levels',
       'Eases complications arising from diabetes',
@@ -113,8 +115,9 @@ export const PRODUCTS = [
     rating: '5.0',
     packaging: 'Enteric-coated capsules',
     blurb: 'Supports kidney function and eases urinary tract infection.',
-    image: '/img/produk/kfix.jpg',
-    gallery: ['/img/produk/kfix.jpg', '/img/produk/kfix-2.jpg'],
+    image: '/img/produk/kfix.webp',
+    imageSrcSet: '/img/produk/kfix-sm.webp 440w, /img/produk/kfix.webp 880w',
+    gallery: ['/img/produk/kfix.webp', '/img/produk/kfix-2.jpg'],
     benefits: [
       'Helps improve and maintain kidney function',
       'Helps raise ATP in the kidneys',
@@ -154,8 +157,9 @@ export const PRODUCTS = [
     rating: '5.0',
     packaging: '600 mg extract · enteric coated',
     blurb: 'Regulates the immune system rather than suppressing it.',
-    image: '/img/produk/regimun.jpg',
-    gallery: ['/img/produk/regimun.jpg', '/img/produk/regimun-2.jpg'],
+    image: '/img/produk/regimun.webp',
+    imageSrcSet: '/img/produk/regimun-sm.webp 440w, /img/produk/regimun.webp 880w',
+    gallery: ['/img/produk/regimun.webp', '/img/produk/regimun-2.jpg'],
     benefits: [
       'Helps limit damage to cells, tissue and organs caused by oxidative stress',
       'Helps with symptoms of immune disorders — autoimmune conditions, rosacea, sleep apnoea, allergy, asthma and migraine among them',

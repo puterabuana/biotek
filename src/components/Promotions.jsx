@@ -99,7 +99,11 @@ export default function Promotions() {
                     <div key={product.id} className="aspect-[4/5] w-1/2 overflow-hidden">
                       <img
                         src={product.image}
+                        srcSet={product.imageSrcSet}
+                        sizes="(max-width: 639px) 50vw, 23vw"
                         alt={product.name}
+                        width="880"
+                        height="1100"
                         loading="lazy"
                         decoding="async"
                         className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
