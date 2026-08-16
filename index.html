@@ -29,13 +29,6 @@
 
     <link rel="preload" href="/img/hero-bg.webp" as="image" type="image/webp" fetchpriority="high" />
     <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <style>
-      #seo-fallback { min-height: 100vh; padding: 6rem 1.5rem; background: #18210d; color: #fff; font: 1rem/1.6 Inter, Arial, sans-serif; }
-      #seo-fallback main, #seo-fallback header { max-width: 70rem; margin: 0 auto; }
-      #seo-fallback nav { display: flex; flex-wrap: wrap; gap: 1rem; }
-      #seo-fallback a { color: inherit; }
-      #seo-fallback h1 { max-width: 52rem; font: 400 clamp(2.5rem, 8vw, 5rem)/1.05 'DM Sans', Arial, sans-serif; }
-    </style>
     <script id="structured-data" type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -138,6 +131,7 @@
       </main>
     </div>
     <div id="root"></div>
+    <script>document.getElementById('seo-fallback')?.remove()</script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
