@@ -1,27 +1,33 @@
-import About from '../components/About.jsx';
-import Assessment from '../components/Assessment.jsx';
+import { lazy, Suspense } from 'react';
 import BiotekHero from '../components/BiotekHero.jsx';
-import Contact from '../components/Contact.jsx';
-import Faq from '../components/Faq.jsx';
-import Marquee from '../components/Marquee.jsx';
-import Products from '../components/Products.jsx';
-import Promotions from '../components/Promotions.jsx';
-import Science from '../components/Science.jsx';
-import Testimonials from '../components/Testimonials.jsx';
+
+const About = lazy(() => import('../components/About.jsx'));
+const Assessment = lazy(() => import('../components/Assessment.jsx'));
+const Contact = lazy(() => import('../components/Contact.jsx'));
+const Faq = lazy(() => import('../components/Faq.jsx'));
+const Marquee = lazy(() => import('../components/Marquee.jsx'));
+const Products = lazy(() => import('../components/Products.jsx'));
+const Promotions = lazy(() => import('../components/Promotions.jsx'));
+const Science = lazy(() => import('../components/Science.jsx'));
+const Testimonials = lazy(() => import('../components/Testimonials.jsx'));
+
+function Deferred({ children }) {
+  return <Suspense fallback={null}>{children}</Suspense>;
+}
 
 export default function Home() {
   return (
     <>
       <BiotekHero />
-      <Marquee />
-      <About />
-      <Products />
-      <Science />
-      <Assessment />
-      <Promotions />
-      <Testimonials />
-      <Faq />
-      <Contact />
+      <Deferred><Marquee /></Deferred>
+      <Deferred><About /></Deferred>
+      <Deferred><Products /></Deferred>
+      <Deferred><Science /></Deferred>
+      <Deferred><Assessment /></Deferred>
+      <Deferred><Promotions /></Deferred>
+      <Deferred><Testimonials /></Deferred>
+      <Deferred><Faq /></Deferred>
+      <Deferred><Contact /></Deferred>
     </>
   );
 }
