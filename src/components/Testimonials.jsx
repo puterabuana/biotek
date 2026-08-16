@@ -79,6 +79,8 @@ export default function Testimonials() {
               <img
                 src={item.photo}
                 alt={item.name}
+                loading="lazy"
+                decoding="async"
                 className="h-28 w-28 shrink-0 rounded-2xl object-cover lg:h-44 lg:w-44"
               />
 

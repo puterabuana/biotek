@@ -67,6 +67,8 @@ export default function About() {
             <img
               src={PRODUCTS[2].image}
               alt="K-Fix capsules"
+              loading="lazy"
+              decoding="async"
               className="pointer-events-none absolute inset-0 h-full w-full object-cover"
             />
             <p className="relative z-10 max-w-[300px] rounded-xl bg-black/70 px-5 py-4 font-dm text-lg leading-[1.2] tracking-[-0.04em] text-white backdrop-blur-sm lg:text-xl">

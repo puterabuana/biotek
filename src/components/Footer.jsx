@@ -29,7 +29,13 @@ export default function Footer() {
                   aria-label={`Official store on ${name}`}
                   className="flex h-14 items-center justify-center rounded-lg bg-white px-6 transition-transform duration-300 hover:scale-[1.04]"
                 >
-                  <img src={logo} alt={name} className="h-5 w-auto max-w-[96px] object-contain" />
+                  <img
+                    src={logo}
+                    alt={name}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-5 w-auto max-w-[96px] object-contain"
+                  />
                 </a>
               ))}
             </div>

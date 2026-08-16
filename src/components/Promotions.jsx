@@ -53,7 +53,13 @@ export default function Promotions() {
                   aria-label={`Official store on ${name}`}
                   className="flex h-[72px] w-[150px] items-center justify-center rounded-xl bg-white px-5 transition-transform duration-300 hover:scale-[1.04] lg:w-[172px]"
                 >
-                  <img src={logo} alt={name} className="h-6 w-auto max-w-full object-contain" />
+                  <img
+                    src={logo}
+                    alt={name}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-6 w-auto max-w-full object-contain"
+                  />
                 </a>
               ))}
             </div>
@@ -94,6 +100,8 @@ export default function Promotions() {
                       <img
                         src={product.image}
                         alt={product.name}
+                        loading="lazy"
+                        decoding="async"
                         className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
                       />
                     </div>
